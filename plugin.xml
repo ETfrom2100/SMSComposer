@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin 
+    xmlns="http://www.phonegap.com/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    id="com.megster.cordova.SMSComposer" 
+    version="0.0.0">
+    
+    <name>SMS Composer</name>
+    
+    <!-- TODO js-module -->
+    <asset src="www/SMSComposer.js" target="js/SMSComposer.js"/>
+    
+    <platform name="ios">
+                
+        <config-file target="config.xml" parent="plugins">
+            <plugin name="SMSComposer" value="SMSComposer" />
+        </config-file>
+
+        <header-file src="src/ios/SMSComposer.h" target-dir="SMSComposer" />
+        <source-file src="src/ios/SMSComposer.m" target-dir="SMSComposer" />
+                
+        <!-- frameworks -->
+        <framework src="MessageUI.framework" />
+        
+    </platform>
+</plugin>
