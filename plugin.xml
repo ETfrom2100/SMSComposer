@@ -9,11 +9,16 @@
     
     <!-- TODO js-module -->
     <asset src="www/SMSComposer.js" target="js/SMSComposer.js"/>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines> 
     
     <platform name="ios">
-                
-        <config-file target="config.xml" parent="plugins">
-            <plugin name="SMSComposer" value="SMSComposer" />
+        <config-file target="config.xml" parent="/*">
+            <feature name="SMSComposer">
+                <param name="ios-package" value="SMSComposer"/>
+            </feature>
         </config-file>
 
         <header-file src="src/ios/SMSComposer.h" target-dir="SMSComposer" />
