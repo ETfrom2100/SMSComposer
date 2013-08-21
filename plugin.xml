@@ -5,10 +5,14 @@
     id="com.megster.cordova.SMSComposer" 
     version="0.0.0">
     
-    <name>SMS Composer</name>
-    
-    <!-- TODO js-module -->
-    <asset src="www/SMSComposer.js" target="js/SMSComposer.js"/>
+    <name>SMSComposer</name>
+    <description>SMSComposer Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>SMSComposer, cordova, megster</keywords>
+
+    <js-module src="www/SMSComposer.js" name="SMSComposer">
+        <clobbers target="SMSComposer" />
+    </js-module>
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />

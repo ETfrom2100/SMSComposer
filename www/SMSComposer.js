@@ -43,9 +43,8 @@ SMSComposer.prototype._didFinishWithResult = function(res)
 }
 
 cordova.addConstructor(function() {
-					   
-					   if(!window.plugins)	{
-					   window.plugins = {};
-					   }
-					   window.plugins.smsComposer = new SMSComposer();
-					   });
+	if(!window.plugins)	{
+		window.plugins = {};
+	}
+	window.plugins.smsComposer = new SMSComposer();
+});
