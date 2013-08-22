@@ -30,7 +30,6 @@
                 
         <!-- frameworks -->
         <framework src="MessageUI.framework" />
-        <framework src="ChatKit.framework" />
         
     </platform>
 </plugin>
