@@ -16,8 +16,6 @@
 }
 
 - (void) showWebPage:(CDVInvokedUrlCommand*)command {
-{
-	NSLog(options.toString());
 	NSMutableDictionary* options = (NSMutableDictionary*)[command argumentAtIndex:1];
 	Class messageClass = (NSClassFromString(@"MFMessageComposeViewController"));
 
