@@ -19,7 +19,7 @@ SMSComposer.ComposeResultType =
 
 SMSComposer.prototype.showSMSComposer = function(toRecipients, body)
 {
-	cordova.exec(null, null, "SMSComposer","showSMSComposer", [toRecipients, body]);
+	cordova.exec(null, null, "SMSComposer", "showSMSComposer", [{ toRecipients:toRecipients,  body:body }]);
 }
 
 SMSComposer.prototype._didFinishWithResult = function(res)

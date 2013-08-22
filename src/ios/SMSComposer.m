@@ -15,8 +15,8 @@
 	return self;
 }
 
-- (void) showWebPage:(CDVInvokedUrlCommand*)command {
-	NSMutableDictionary* options = (NSMutableDictionary*)[command argumentAtIndex:1];
+- (void) showSMSComposer:(CDVInvokedUrlCommand*)command {
+	NSMutableDictionary* options = (NSMutableDictionary*)[command argumentAtIndex:0];
 	Class messageClass = (NSClassFromString(@"MFMessageComposeViewController"));
 
 	if (messageClass != nil) {
